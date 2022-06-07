@@ -23,7 +23,7 @@ gap: 0px;
 
 header{
 text-align: center;
-background-image: url("../img/book.png"); 
+background-image: url("./img/book.png"); 
 background-repeat:repeat-x;
 padding: 10px 15px;
 grid-area: header;
@@ -36,7 +36,7 @@ text-shadow: 0 5px 10px whitesmoke;
 }
  
 main{
-background-image: url("../img/background.png");
+background-image: url("./img/background.png");
 padding: 15px;
 font-family: 'Roboto Condensed', sans-serif;
 grid-area: main;
@@ -142,7 +142,7 @@ border-radius: 100px;
 }
 
 aside{
-background-image: url("../img/background.png");
+background-image: url("./img/background.png");
 padding: 20px 50px;
 grid-area: aside;
 /* display: none; */
@@ -154,7 +154,7 @@ width: 140px;
 }
 
 footer{
-background-image: url("../img/karta1.jpg"); 
+background-image: url("./img/karta1.jpg"); 
 padding: 10px 15px;
 grid-area: footer;
 }
