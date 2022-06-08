@@ -12,10 +12,9 @@ max-width: 1200px;
 margin: 0 auto;
 min-height: 100vh;
 display: grid;
-grid-template-rows: 0.2fr 0.5fr 5fr 0.2fr;
+grid-template-rows: 0.1fr 3fr 0.1fr;
 grid-template-columns: 4fr 1fr;
 grid-template-areas: "header header"
-                     "main aside"
                      "main aside"
                      "footer footer";
 gap: 0px;
@@ -45,6 +44,7 @@ grid-area: main;
 .element{
 background-color:rgb(100, 229, 115); 
 color:black;
+font-size: 14px;
 padding: 5px 5px;
 }
 
@@ -145,7 +145,7 @@ aside{
 background-image: url("./img/background.png");
 padding: 20px 50px;
 grid-area: aside;
-/* display: none; */
+/* display: none;  */
 }
 
 .frame2{
@@ -207,6 +207,22 @@ grid-template-areas:
 "main"
 "aside"
 "footer";
+grid-template-rows: 70px 1fr 0fr 70px;
 grid-template-columns: 1fr;
+}
+}
+
+@Media(max-width: 320px){
+.wrapper{
+grid-template-areas: 
+"header"
+"main"
+"aside"
+"footer";
+grid-template-rows: 70px 1fr 0fr 70px;
+grid-template-columns: 1fr;
+}
+.element{
+font-size: 16px;
 }
 }
